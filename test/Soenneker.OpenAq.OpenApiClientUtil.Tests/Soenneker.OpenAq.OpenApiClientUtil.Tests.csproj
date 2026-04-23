@@ -16,20 +16,13 @@
         </Content>
     </ItemGroup>
 
-<<<<<<< HEAD
     <ItemGroup>
         <PackageReference Include="Soenneker.Utils.Test" Version="4.0.314" />
         <PackageReference Include="Soenneker.Tests.HostedUnit" Version="4.0.13" />
         <PackageReference Include="TUnit" Version="1.37.24" />
-=======
-    <ItemGroup><PackageReference Include="Soenneker.Utils.Test" Version="4.0.315" />
-        <PackageReference Include="Soenneker.Tests.FixturedUnit" Version="4.0.2303" />
-        <PackageReference Include="xUnit.v3" Version="3.2.2" />
->>>>>>> a517b45fe77e9b6b3858324cbe30f3a45f33d491
     </ItemGroup>
 
     <ItemGroup>
         <ProjectReference Include="..\..\src\Soenneker.OpenAq.OpenApiClientUtil\Soenneker.OpenAq.OpenApiClientUtil.csproj" />
     </ItemGroup>
 </Project>
-
