@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 namespace Soenneker.OpenAq.OpenApiClientUtil.Abstract;
 
 /// <summary>
-/// Exposes a cached OpenAPI client instance.
+/// Provides a cached OpenAQ API client backed by the configured HTTP provider.
 /// </summary>
-public interface IOpenAqOpenApiClientUtil: IDisposable, IAsyncDisposable
+public interface IOpenAqOpenApiClientUtil : IDisposable, IAsyncDisposable
 {
     /// <summary>
-    /// Gets the value.
+    /// Gets the cached OpenAQ client, creating it on the first call.
     /// </summary>
     /// <param name="cancellationToken">The cancellation token.</param>
-    /// <returns>A task containing the result of the operation.</returns>
+    /// <returns>The configured OpenAQ client.</returns>
     ValueTask<OpenAqOpenApiClient> Get(CancellationToken cancellationToken = default);
 }

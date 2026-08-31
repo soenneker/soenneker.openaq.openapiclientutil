@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <PropertyGroup>
-        <Description>A thread-safe utility for obtaining OpenAq's OpenApiClient singleton.</Description>
+        <Description>Provides a configured OpenAQ API client and reuses it for the lifetime of the registered service.</Description>
         <Version Condition="'$(BUILD_VERSION)' == ''">4.0.0</Version>
         <Version Condition="'$(BUILD_VERSION)' != ''">$(BUILD_VERSION)</Version>
         <AssemblyName>Soenneker.OpenAq.OpenApiClientUtil</AssemblyName>
@@ -41,7 +41,6 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Soenneker.Kiota.GenericAuthenticationProvider" Version="4.0.40" />
         <PackageReference Include="Soenneker.OpenAq.HttpClients" Version="4.0.92" />
         <PackageReference Include="Soenneker.OpenAq.OpenApiClient" Version="4.0.33" />
     </ItemGroup>
