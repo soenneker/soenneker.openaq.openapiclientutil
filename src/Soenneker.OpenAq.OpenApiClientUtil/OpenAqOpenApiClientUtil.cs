@@ -11,6 +11,7 @@ using Soenneker.Utils.AsyncSingleton;
 
 namespace Soenneker.OpenAq.OpenApiClientUtil;
 
+/// <inheritdoc cref="IOpenAqOpenApiClientUtil" />
 public sealed class OpenAqOpenApiClientUtil : IOpenAqOpenApiClientUtil
 {
     private readonly AsyncSingleton<OpenAqOpenApiClient> _client;
