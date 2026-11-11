@@ -44,7 +44,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Soenneker.OpenAq.HttpClients" Version="11.0.174" />
+        <PackageReference Include="Soenneker.OpenAq.HttpClients" Version="11.0.175" />
         <PackageReference Include="Soenneker.OpenAq.OpenApiClient" Version="11.0.68" />
     </ItemGroup>
 </Project>
